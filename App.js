@@ -12,11 +12,11 @@ export default function App() {
   const compare = () => {
     if (randomNumber < guessed) {
       setLkm(parseInt(lkm) + 1)
-      onChangeText("Your number is too big")
+      onChangeText("Your number " + guessed + " is too big")
       onChangeGuessed(null)
     } else if (randomNumber > guessed) {
       setLkm(parseInt(lkm) + 1)
-      onChangeText("Your number is too low")
+      onChangeText("Your number " + guessed + " is too low")
       onChangeGuessed(null)
     } else if (randomNumber == guessed) {
       setLkm(parseInt(lkm) + 1)
